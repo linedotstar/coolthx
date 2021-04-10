@@ -4,7 +4,7 @@ import './Thanks.scss';
 function Thanks(props) {
   const { recipient } = useParams();
 
-  return <p>Cool Thx, {recipient}</p>;
+  return <h1 className='thanks'>Cool Thx, {recipient}</h1>;
 }
 
 export default Thanks;
