@@ -11,9 +11,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="layout">
       <Router>
-        <header className="App-header">
+        <header className="header">
 
         </header>
 
@@ -33,7 +33,7 @@ function App() {
           </Switch>
         </div>
 
-        <footer>
+        <footer className='footer'>
           <nav>
             <ul>
               <li>

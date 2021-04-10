@@ -1,11 +1,15 @@
-.App {
+.layout {
   text-align: center;
 }
 
-.App-header {
+.header {
 
 }
 
-.App-link {
-  color: #61dafb;
+.main {
+  min-height: 100vh;
+}
+
+.footer {
+
 }
