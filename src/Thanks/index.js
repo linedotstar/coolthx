@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import './Thanks.css';
+import './Thanks.scss';
 
 function Thanks(props) {
   const { recipient } = useParams();

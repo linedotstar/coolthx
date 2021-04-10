@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { generatePath, Link } from 'react-router-dom';
-import './Home.css';
+import './Home.scss';
 
 function Home(props) {
   const [recipient, setRecipient] = useState('');

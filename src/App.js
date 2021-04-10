@@ -7,7 +7,7 @@ import {
 import Home from './Home';
 import Thanks from './Thanks';
 import About from './About';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
