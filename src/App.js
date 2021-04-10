@@ -19,7 +19,7 @@ function App() {
 
         <div className='main'>
           <Switch>
-            <Route path={['/thanks', '/thx', '/thanks/:recipient', '/thx/:recipient']}>
+            <Route path='/thanks/:recipient'>
               <Thanks />
             </Route>
 
