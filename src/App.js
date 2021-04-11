@@ -4,15 +4,17 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Home from './Home';
-import Thanks from './Thanks';
-import About from './About';
+import Home from './pages/Home';
+import Thanks from './pages/Thanks';
+import About from './pages/About';
+import ScrollToTop from './components/ScrollToTop';
 import './App.scss';
 
 function App() {
   return (
     <div className="layout">
       <Router>
+        <ScrollToTop />
         <div className='main'>
           <Switch>
             <Route path='/thanks/:recipient'>

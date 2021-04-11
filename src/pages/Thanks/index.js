@@ -7,7 +7,7 @@ function Thanks(props) {
 
   useEffect(() => {
     document.title = `Cool Thx, ${recipient}`;
-  });
+  }, [recipient]);
 
   return <h1 className='thanks'>Cool Thx, {recipient}</h1>;
 }
