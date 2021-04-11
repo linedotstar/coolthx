@@ -35,6 +35,9 @@ function App() {
           <nav>
             <ul>
               <li>
+                Cool Thx
+              </li>
+              <li>
                 <NavLink to="/">Thank someone</NavLink>
               </li>
               <li>
