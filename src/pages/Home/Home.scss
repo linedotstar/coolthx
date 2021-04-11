@@ -8,5 +8,9 @@
     border-style: solid;
     border-color: #000;
     font-size: 2em;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
