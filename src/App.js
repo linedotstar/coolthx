@@ -4,10 +4,10 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Home from './pages/Home';
-import Thanks from './pages/Thanks';
-import About from './pages/About';
-import ScrollToTop from './components/ScrollToTop';
+import Home from '@pages/Home';
+import Thanks from '@pages/Thanks';
+import About from '@pages/About';
+import ScrollToTop from '@components/ScrollToTop';
 import './App.scss';
 
 function App() {

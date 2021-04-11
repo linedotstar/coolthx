@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import './Thanks.scss';
 
-import Page from '../../components/Page';
+import Page from '@components/Page';
 
 function Thanks(props) {
   const { recipient } = useParams();

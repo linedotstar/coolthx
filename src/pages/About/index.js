@@ -1,6 +1,6 @@
 import './About.scss';
 
-import Page from '../../components/Page';
+import Page from '@components/Page';
 
 function About(props) {
 

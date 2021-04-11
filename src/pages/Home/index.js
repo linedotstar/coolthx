@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { generatePath, Link } from 'react-router-dom';
 import './Home.scss';
 
-import Page from '../../components/Page';
+import Page from '@components/Page';
 
 function Home(props) {
   const [recipient, setRecipient] = useState('');
