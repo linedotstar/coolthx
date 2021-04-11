@@ -1,11 +1,16 @@
 @import-normalize;
 
-.layout {
-  text-align: center;
+a {
+  text-decoration: none;
+  color: #000;
+
+  &:hover, &:active {
+    text-decoration: underline;
+  }
 }
 
-.header {
-
+.layout {
+  text-align: center;
 }
 
 .main {
@@ -13,5 +18,20 @@
 }
 
 .footer {
+  background: #ccc;
 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+
+    li {
+      margin: 0 5vw;
+    }
+  }
 }

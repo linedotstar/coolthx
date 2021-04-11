@@ -13,10 +13,6 @@ function App() {
   return (
     <div className="layout">
       <Router>
-        <header className="header">
-
-        </header>
-
         <div className='main'>
           <Switch>
             <Route path='/thanks/:recipient'>
