@@ -2,27 +2,26 @@ import React, { useState } from 'react';
 import { generatePath, Link } from 'react-router-dom';
 import './Home.scss';
 
+import Page from '../../components/Page';
+
 function Home(props) {
   const [recipient, setRecipient] = useState('');
 
   return (
-    <>
+    <Page name='home'>
       <h1>Thank Someone</h1>
       <form onSubmit={(e) => e.preventDefault()}>
-        <label for='recipient-input'>
-          Who do you want to thank?
-        </label>
         <input
           id='recipient-input'
           type='text'
           value={recipient}
           onChange={(e) => setRecipient(e.target.value)}
-          placeholder='someone'
+          placeholder='Who do you want to thank?'
         />
       </form>
 
       <ThanksLink recipient={recipient} />
-    </>
+    </Page>
   );
 }
 
