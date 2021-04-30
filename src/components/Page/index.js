@@ -1,3 +1,5 @@
+import './Page.scss';
+
 function Page(props) {
   const { name, children } = props;
 

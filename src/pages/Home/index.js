@@ -3,6 +3,7 @@ import { generatePath, Link } from 'react-router-dom';
 import './Home.scss';
 
 import Page from '@components/Page';
+import Form from '@components/Form';
 
 function Home(props) {
   const [recipient, setRecipient] = useState('');
@@ -10,15 +11,17 @@ function Home(props) {
   return (
     <Page name='home'>
       <h1>Thank Someone</h1>
-      <form onSubmit={(e) => e.preventDefault()}>
-        <input
-          id='recipient-input'
-          type='text'
-          value={recipient}
-          onChange={(e) => setRecipient(e.target.value)}
-          placeholder='Who do you want to thank?'
-        />
-      </form>
+      <Form onSubmit={(e) => e.preventDefault()}>
+        <Form.Group>
+          <Form.Input
+            id='recipient-input'
+            label='Who do you want to thank?'
+            type='text'
+            value={recipient}
+            onChange={(e) => setRecipient(e.target.value)}
+          />
+        </Form.Group>
+      </Form>
 
       <ThanksLink recipient={recipient} />
     </Page>
