@@ -5,7 +5,8 @@ import './Thanks.scss';
 import Page from '@components/Page';
 
 function Thanks(props) {
-  const { recipient } = useParams();
+  let { recipient } = useParams();
+  recipient = recipient || props.recipient;
 
   useEffect(() => {
     document.title = `Cool Thx, ${recipient}`;

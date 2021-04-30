@@ -1,3 +1,16 @@
 .page.home {
+  .preview {
+    position: relative;
+    border: 1px solid #cccccc;
 
+    &:before {
+      content: 'preview';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #cccccc;
+      border-radius: 0 0 0.25em 0;
+      padding: 0.25em 0.5em;
+    }
+  }
 }

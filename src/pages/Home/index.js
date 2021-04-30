@@ -5,6 +5,7 @@ import './Home.scss';
 
 import Page from '@components/Page';
 import Form from '@components/Form';
+import Thanks from '@pages/Thanks';
 
 function Home(props) {
   const [recipient, setRecipient] = useState('');
@@ -23,7 +24,7 @@ function Home(props) {
           />
         </Form.Group>
       </Form>
-
+      <Preview recipient={recipient} />
       <ThanksLink recipient={recipient} />
     </Page>
   );
@@ -51,6 +52,20 @@ function ThanksLink(props) {
       </Link>
       <button onClick={copyLink}>copy{copied && '!!!'}</button>
     </p>
+  );
+}
+
+function Preview(props) {
+  const { recipient } = props;
+
+  if (!recipient || recipient.length <= 0) {
+    return null;
+  }
+
+  return (
+    <div className='preview'>
+      <Thanks recipient={recipient} />
+    </div>
   );
 }
 
